@@ -7,10 +7,12 @@ o.ordersellingprice - o.ordercostprice as orderprofit,
 o.ordercostprice,
 o.ordersellingprice,
 --from raw customer
+c.C1 as customerid,
 c.c2 as CustomerName,  -- Use exact case
 c.C3 as Segment,
 c.C4 as Country,
 -- from raw product
+p.C2 as productid,
 p.C1 as category,
 p.C3 as productname,
 p.C4 as subcategory
